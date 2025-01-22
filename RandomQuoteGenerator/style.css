@@ -1,0 +1,53 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: cadetblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+#container {
+    background-color: chartreuse;
+    border: 10px solid red;
+    height: 300px;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#output {
+    margin: 20px;
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+    background-color: aliceblue;
+
+}
+
+/* * two in one !? */
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #055139;
+    color: #a7e50a;
+    padding: 20px 20px;
+    border: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#quote {
+    margin: 25px;
+    font-size: 30px;
+    color: blue;
+}
+
+#author {
+    margin: 25px;
+    font-size: 30px;
+    color: rgb(136, 0, 255);
+}
