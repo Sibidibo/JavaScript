@@ -37,6 +37,7 @@ function checkGuess(){
     }
 };
 
+// event listener for the enter button
 enterButton.addEventListener("click", function() {
     checkGuess();
     attempts--;
@@ -44,13 +45,19 @@ enterButton.addEventListener("click", function() {
         output.innerHTML = "You have run out of attempts! The number was " + randomNumber;
         output.style.color = "red";
         enterButton.disabled = true;
-    } else {
+    } 
+    else if (attempts > 0) {
         output.innerHTML += " You have " + attempts + " attempts left!";
+    }
+    else if (input == randomNumber) {
+        output.innerHTML = "Congratulations!!";
+        enterButton.disabled = true;
     }
 });
 
+// function to refresh the page
 function refreshPage() {
     window.location.reload();
 }
-
+// event listener for the play again button
 againButton.addEventListener("click", refreshPage);

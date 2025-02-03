@@ -36,11 +36,11 @@ function generateQuote() {
     }
 
     let elementText = htmlElement.innerText;
-    let imputElemnt = document.createElement('input');
+    let imputElement = document.createElement('input');
     document.body.appendChild(imputElemnt);
 
     inputElemnt.select();
-    document.execCommand('copy');
+   // document.execCommand('copy');
     inputElement.parentNode.removeChild(inputElement);
   }
   document.querySelectore('#copyTextBtn').onclick =function()
